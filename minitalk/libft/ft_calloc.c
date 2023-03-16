@@ -17,7 +17,7 @@ void	*ft_calloc(size_t numcarac, size_t size)
 	void	*ptr;
 
 	if (numcarac == 18446744073709551615UL && size == 18446744073709551615UL)
-		return (NULL);
+		return (0);
 	ptr = malloc(numcarac * size);
 	if (ptr == NULL)
 		return (ptr);

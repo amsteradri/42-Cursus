@@ -19,7 +19,7 @@ char	*ft_strnstr(const char	*haystack, const char	*needle, size_t len)
 	if (!*needle)
 		return ((char *)haystack);
 	else if (!len)
-		return (NULL);
+		return (0);
 	if (*needle == 0 || haystack == needle)
 		return ((char *)haystack);
 	c = ft_strlen((char *)needle);

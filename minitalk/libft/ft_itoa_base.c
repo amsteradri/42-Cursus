@@ -37,7 +37,7 @@ char	*ft_itoa_base(unsigned long long n, char *base)
 	base_len = ft_strlen(base);
 	str = ft_calloc((num_len + 1), sizeof(char));
 	if (!str)
-		return (NULL);
+		return (0);
 	while (num_len)
 	{
 		num_len = num_len - 1;

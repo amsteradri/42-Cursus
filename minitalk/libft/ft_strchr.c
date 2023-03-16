@@ -21,7 +21,7 @@ char	*ft_strchr(const char *s, int c)
 		str++;
 	if ((unsigned char) c == *str)
 		return (str);
-	return (NULL);
+	return (0);
 }
 
 /*

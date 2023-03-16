@@ -49,7 +49,7 @@ char	*ft_itoa(int n)
 	lon = ft_len(n);
 	x = (char *)malloc(sizeof(char) * (lon + 1));
 	if (!(x))
-		return (NULL);
+		return (0);
 	x[lon--] = '\0';
 	if (n == 0)
 		x[0] = '0';

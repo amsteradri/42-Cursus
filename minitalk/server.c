@@ -12,7 +12,6 @@
 
 #include "minitalk.h"
 
-
 void	ft_handler(int signal)
 {
 	static int	bit;
@@ -40,9 +39,8 @@ int	main(int argc, char **argv)
 		return (0);
 	}
 	pid = getpid();
-	ft_printf("\033[35mPID of the server\033[0m \033[96m->\033[0m\033[96m %d\033[0m\n", pid);
+	ft_printf("\033[35mPID of the server -> %d\033\n", pid);
 	ft_printf("\033[33mRecieving message...\033[0m\n");
-
 	while (argc == 1)
 	{	
 		signal(SIGUSR1, ft_handler);
@@ -51,4 +49,3 @@ int	main(int argc, char **argv)
 	}
 	return (0);
 }
-

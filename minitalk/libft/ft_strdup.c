@@ -22,7 +22,7 @@ char	*ft_strdup(char *src)
 	tam = ft_strlen(src);
 	mem = malloc(sizeof(char) * (tam + 1));
 	if (!mem)
-		return (NULL);
+		return (0);
 	while (src[i])
 	{
 		mem[i] = src[i];
